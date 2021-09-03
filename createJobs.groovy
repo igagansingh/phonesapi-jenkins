@@ -6,3 +6,17 @@ pipelineJob('pipelineJob') {
         }
     }
 }
+pipelineJob('phones-api-job') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/igagansingh/PhonesAPI.git'
+                    }
+                    branch 'dev'
+                }
+            }
+        }
+    }
+}

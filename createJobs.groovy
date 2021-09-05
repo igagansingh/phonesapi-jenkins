@@ -15,6 +15,7 @@ pipelineJob('phones-api-job') {
                         url 'https://github.com/igagansingh/PhonesAPI.git'
                     }
                     branch 'dev'
+                    scriptPath('Jenkinsfile')
                 }
             }
         }
